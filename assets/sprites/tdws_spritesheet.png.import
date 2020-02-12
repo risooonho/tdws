@@ -2,11 +2,16 @@
 
 importer="texture"
 type="StreamTexture"
-valid=false
+path="res://.import/tdws_spritesheet.png-269203c3e42293fb9f284990d3631d34.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/sprites/tdws_spritesheet.png"
+dest_files=[ "res://.import/tdws_spritesheet.png-269203c3e42293fb9f284990d3631d34.stex" ]
+
 [params]
 
 compress/mode=0
