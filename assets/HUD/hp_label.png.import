@@ -2,16 +2,11 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/hp_label.png-d36cfc58f6ca5777ce6ba74ea1029b3e.stex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/HUD/hp_label.png"
-dest_files=[ "res://.import/hp_label.png-d36cfc58f6ca5777ce6ba74ea1029b3e.stex" ]
-
 [params]
 
 compress/mode=0
