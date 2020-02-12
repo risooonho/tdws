@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using Godot;
 using tdws.actors.abstract_actor;
 using tdws.actors.monsters;
@@ -48,7 +47,7 @@ namespace tdws.core
 
     private void AddEnemies(TileMap room)
     {
-      var possibleEnemyPositions = room.GetNode("PossibleEnemyPositions").GetChildren().Cast<Position2D>().ToList();
+      var possibleEnemyPositions = room.GetNode("PossibleEnemyPositions").GetChildren();
       var enemyPositions = ListService.SelectNRandom(possibleEnemyPositions, 3);
       foreach (var enemyPosition in enemyPositions)
       {
@@ -68,7 +67,7 @@ namespace tdws.core
     private void AddDoors(TileMap room)
     {
       var doorScene = GD.Load("res://src/objects/door/Door.tscn") as PackedScene;
-      var possibleDoorPositions = room.GetNode("PossibleDoorPositions").GetChildren().Cast<Position2D>().ToList();
+      var possibleDoorPositions = room.GetNode("PossibleDoorPositions").GetChildren();
       var doorPositions = ListService.SelectNRandom(possibleDoorPositions, 3);
 
       foreach (var doorPosition in doorPositions)
